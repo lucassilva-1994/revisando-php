@@ -1,4 +1,6 @@
 <?php
-    for($contador=01;$contador <=15; $contador+=1){
-        print "#$contador<br/>";
+    for($contador=01;$contador <=100; $contador+=1){
+        if($contador % 2 != 0){
+            print "#$contador.<br/>";
+        }
     }
