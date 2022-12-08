@@ -1,4 +1,8 @@
 <?php
+    function exibeMensagem($mensagem){
+        print $mensagem. "<br/>";
+    }
+
     $contasCorrentes = [
         12345678911 => [
             "titular" => "Pessoa 01",
@@ -17,7 +21,7 @@
             "saldo" => 300.78
         ]
     ];
-    
+
     foreach($contasCorrentes as $cpf => $conta){
-        print $cpf."<br/>";
+        exibeMensagem($cpf ." ----- ".$conta['titular']);
     }
