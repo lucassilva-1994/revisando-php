@@ -23,6 +23,7 @@
         $contasCorrentes['78945612322'] = sacar($contasCorrentes['78945612322'],300);
         $contasCorrentes['32165498785'] = depositar($contasCorrentes['32165498785'], 900);
 
+        titularComLetraMaiscula($contasCorrentes['32165498785']);
         foreach($contasCorrentes as $cpf => $conta){
             exibeMensagem("CPF: $cpf &nbsp; Titular: $conta[titular] &nbsp; Saldo: $conta[saldo].");
             exibeMensagem("CPF: $cpf &nbsp; Titular: {$conta['titular']} &nbsp; Saldo: {$conta['saldo']}.");
