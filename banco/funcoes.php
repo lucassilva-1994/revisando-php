@@ -25,6 +25,6 @@
             print $mensagem . "<br/>";
         }
 
-        function titularComLetraMaiscula(array $conta){
+        function titularComLetraMaiscula(array &$conta){
             $conta['titular'] = strtoupper($conta['titular']);
         }
