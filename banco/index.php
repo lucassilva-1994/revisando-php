@@ -25,7 +25,8 @@
 
         titularComLetraMaiscula($contasCorrentes['32165498785']);
         foreach($contasCorrentes as $cpf => $conta){
-            exibeMensagem("CPF: $cpf &nbsp; Titular: $conta[titular] &nbsp; Saldo: $conta[saldo].");
-            exibeMensagem("CPF: $cpf &nbsp; Titular: {$conta['titular']} &nbsp; Saldo: {$conta['saldo']}.");
+            ['titular' => $titular, 'saldo' => $saldo] = $conta;
+            exibeMensagem("CPF: $cpf &nbsp; Titular: $titular &nbsp; Saldo: $saldo.");
+            exibeMensagem("CPF: $cpf &nbsp; Titular: {$titular} &nbsp; Saldo: {$saldo}.");
             exibeMensagem("<hr/>");
         }
