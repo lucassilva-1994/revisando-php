@@ -24,6 +24,10 @@
         $contasCorrentes['32165498785'] = depositar($contasCorrentes['32165498785'], 900);
 
         titularComLetraMaiscula($contasCorrentes['32165498785']);
+
+        //Removendo item da lista
+        unset($contasCorrentes['32165498785']);
+
         foreach($contasCorrentes as $cpf => $conta){
             ['titular' => $titular, 'saldo' => $saldo] = $conta;
             exibeMensagem("CPF: $cpf &nbsp; Titular: $titular &nbsp; Saldo: $saldo.");
