@@ -1,14 +1,14 @@
 <?php
 
 $notas = [
-    9,
-    8,
-    10,
-    7.5,
-    9.9
+    "Ana" => 9.5,
+    "João" => 8.7,
+    "Maria" => 5,
+    "Pedro" => 7.5,
+    "Larissa" => 6.4
 ];
 
-rsort($notas);
+arsort($notas);
 print "<pre>";
 var_dump($notas);
 print "</pre>";
