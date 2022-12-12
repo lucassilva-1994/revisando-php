@@ -8,7 +8,7 @@ $notas = [
     "Larissa" => 6.4
 ];
 
-arsort($notas);
+ksort($notas);
 print "<pre>";
 var_dump($notas);
 print "</pre>";
