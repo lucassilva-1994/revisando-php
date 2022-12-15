@@ -16,7 +16,7 @@ $novosalunos = [
     "Alice"
 ];
 
-$alunos2022 = array_merge($alunos2021, $novosalunos);
+$alunos2022 = [...$alunos2021, "Lucas Sílva",...$novosalunos];
 print "<pre>";
 var_dump($alunos2022);
 print "</pre>";
