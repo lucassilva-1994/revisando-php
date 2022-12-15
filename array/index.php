@@ -1,11 +1,11 @@
 <?php
     $notas = [
-        [ "aluno" => "Alice", "nota" => 8],
-        ["aluno" => "Fabiano", "nota" => 7.5],
-        ["aluno" => "Rafaela","nota" => 9],
-        ["aluno" => "Lorena", "nota" => 6]
+        "aluno" => "Alice",
+        "nota" => 8
     ];
 
-    foreach($notas as ["aluno"=> $aluno, "nota" => $nota]){
-        print "Aluno: $aluno &nbsp; Nota: $nota <br/>";
-    }
+    //Usando o extract todas as chaves do array se torna uma váriavel
+    extract($notas);
+    print "<pre>";
+    var_dump($aluno,$nota);
+    print "</pre>";
